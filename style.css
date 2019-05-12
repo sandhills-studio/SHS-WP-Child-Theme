@@ -1,0 +1,88 @@
+/*
+Theme Name: Sandhills Studio Child Theme
+Author: Sandhills Studio
+Author URI: https://www.sandhillsstudio.com
+Description: A Sandhills Studio created theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sandhillsstudio
+Template: generatepress
+
+General*/
+a,button{outline:none}
+/*Forms*/
+select{background:unset}
+textarea{
+	min-height:100px!important;
+	max-height:250px;
+	max-width:100%;
+	resize:vertical;
+}
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked,[type="radio"]:not(:checked),[type="radio"]:checked{
+	position:absolute;
+	top:14px;
+	left:11px;
+	opacity:0
+}
+[type="checkbox"]:not(:checked) + span,[type="checkbox"]:checked + span,[type="radio"]:not(:checked) + span,[type="radio"]:checked + span,[type="checkbox"]:not(:checked) + label,[type="checkbox"]:checked + label,[type="radio"]:not(:checked) + label,[type="radio"]:checked + label{
+	position:relative;
+	padding-left:35px;
+	cursor:pointer;
+	display:inline-block;
+}
+[type="checkbox"]:not(:checked) + span:before,[type="checkbox"]:checked + span:before,[type="checkbox"]:not(:checked) + span:after,[type="checkbox"]:checked + span:after,[type="radio"]:not(:checked) + span:before,[type="radio"]:checked + span:before,[type="radio"]:not(:checked) + span:after,[type="radio"]:checked + span:after,[type="checkbox"]:not(:checked) + label:before,[type="checkbox"]:checked + label:before,[type="checkbox"]:not(:checked) + label:after,[type="checkbox"]:checked + label:after,[type="radio"]:not(:checked) + label:before,[type="radio"]:checked + label:before,[type="radio"]:not(:checked) + label:after,[type="radio"]:checked + label:after{
+	content:'';
+	position:absolute
+}
+[type="checkbox"]:not(:checked) + span:before,[type="checkbox"]:checked + span:before,[type="radio"]:not(:checked) + span:before,[type="radio"]:checked + span:before,[type="checkbox"]:not(:checked) + label:before,[type="checkbox"]:checked + label:before,[type="radio"]:not(:checked) + label:before,[type="radio"]:checked + label:before{
+	left:0;
+	top:-1px;
+	width:25px;
+	height:25px;
+	border:2px solid #222;
+	border-radius:6px;
+	transition:background-color .2s
+}
+[type="radio"]:not(:checked) + span:before,[type="radio"]:checked + span:before,[type="radio"]:not(:checked) + label:before,[type="radio"]:checked + label:before{
+	border-radius:100%;
+}
+[type="checkbox"]:checked + span:before,[type="radio"]:checked + span:before,[type="checkbox"]:checked + label:before,[type="radio"]:checked + label:before{
+	background:#222;
+	border:2px solid #222
+}
+[type="checkbox"]:checked + span:before,[type="checkbox"]:not(:checked) + span:before,[type="radio"]:checked + span:before,[type="radio"]:not(:checked) + span:before,[type="checkbox"]:checked + label:before,[type="checkbox"]:not(:checked) + label:before,[type="radio"]:checked + label:before,[type="radio"]:not(:checked) + label:before{
+	content:"";
+	display:inline-block;
+	width:25px;
+	height:25px;
+	position:absolute;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:80%;
+	top:3px;
+}
+.login [type="checkbox"]:checked + span:before,.login [type="checkbox"]:not(:checked) + span:before,.login [type="checkbox"]:checked + label:before,.login [type="checkbox"]:not(:checked) + label:before{top:-1px}
+[type="checkbox"]:checked + span:before,[type="radio"]:checked + span:before,[type="checkbox"]:checked + label:before,[type="radio"]:checked + label:before{
+	content:""!important;
+	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTczLjkgNDM5LjRMNy41IDI3M2MtMTAtMTAtMTAtMjYuMiAwLTM2LjJsMzYuMi0zNi4yYzEwLTEwIDI2LjItMTAgMzYuMiAwTDE5MiAzMTIuNyA0MzIuMSA3Mi42YzEwLTEwIDI2LjItMTAgMzYuMiAwbDM2LjIgMzYuMmMxMCAxMCAxMCAyNi4yIDAgMzYuMkwyMTAuMSA0MzkuNGMtMTAgMTAtMjYuMiAxMC0zNi4yIDB6Ii8+PC9zdmc+)
+}
+[type="checkbox"]:checked + span:after,[type="radio"]:checked + span:after,[type="checkbox"]:checked + label:after,[type="radio"]:checked + label:after{
+	border:0;
+	outline:0;
+	box-sizing:border-box
+}
+input[type="submit"]:disabled,input[type="submit"]:disabled:hover{
+	background:#888;
+	border-color:#888;
+	color:#fff;
+	cursor:not-allowed
+}
+/*Scrollbar*/
+::-webkit-scrollbar{width:12px;height:12px;background-color:#fff}
+::-webkit-scrollbar-corner{background-color:#fff}
+::-webkit-scrollbar-track{background-color:#fff}
+::-webkit-scrollbar-thumb{background:#222}
+/*Selection*/
+::selection{color:#fff;background-color:#222}
+::-moz-selection{color:#fff;background-color:#222}
