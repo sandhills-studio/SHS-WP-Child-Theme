@@ -29,7 +29,7 @@ textarea{
 	position:relative;
 	padding-left:35px;
 	cursor:pointer;
-	display:inline-block;
+	display:inline-block!important;
 }
 [type="checkbox"]:not(:checked) + span:before,[type="checkbox"]:checked + span:before,[type="checkbox"]:not(:checked) + span:after,[type="checkbox"]:checked + span:after,[type="radio"]:not(:checked) + span:before,[type="radio"]:checked + span:before,[type="radio"]:not(:checked) + span:after,[type="radio"]:checked + span:after,[type="checkbox"]:not(:checked) + label:before,[type="checkbox"]:checked + label:before,[type="checkbox"]:not(:checked) + label:after,[type="checkbox"]:checked + label:after,[type="radio"]:not(:checked) + label:before,[type="radio"]:checked + label:before,[type="radio"]:not(:checked) + label:after,[type="radio"]:checked + label:after{
 	content:'';
