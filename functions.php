@@ -33,60 +33,67 @@ function shs_register_required_plugins(){
 			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'BulletProof Security',
-			'slug'      => 'bulletproof-security',
-			'required'  => false,
+			'name'               => 'BulletProof Security',
+			'slug'               => 'bulletproof-security',
+			'required'           => false,
+			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'Elementor',
-			'slug'      => 'elementor',
-			'required'  => false,
+			'name'               => 'Elementor',
+			'slug'               => 'elementor',
+			'required'           => false,
+			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'Favicon door RealFaviconGenerator',
-			'slug'      => 'favicon-by-realfavicongenerator',
+			'name'               => 'Favicon door RealFaviconGenerator',
+			'slug'               => 'favicon-by-realfavicongenerator',
 			'required'  => false,
+			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'UpdraftPlus - Backup/Restore',
-			'slug'      => 'updraftplus',
-			'required'  => false,
+			'name'               => 'UpdraftPlus - Backup/Restore',
+			'slug'               => 'updraftplus',
+			'required'           => false,
+			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'WP Mail SMTP',
-			'slug'      => 'wp-mail-smtp',
-			'required'  => false,
+			'name'               => 'WP Mail SMTP',
+			'slug'               => 'wp-mail-smtp',
+			'required'           => false,
+			'force_activation'   => true,
 		),
 		array(
-			'name'        => 'WordPress SEO by Yoast',
-			'slug'        => 'wordpress-seo',
-			'is_callable' => 'wpseo_init',
+			'name'                 => 'WordPress SEO by Yoast',
+			'slug'                 => 'wordpress-seo',
+			'is_callable'          => 'wpseo_init',
+			'force_activation'     => true,
 		),
 		//Premium Plugins
 		array(
-			'name'      => 'Elementor Pro',
-			'slug'      => 'elementor-pro',
-			'required'  => false,
-			'source'    => get_stylesheet_directory() . '/inc/plugins/elementor-pro.zip'
+			'name'               => 'Elementor Pro',
+			'slug'               => 'elementor-pro',
+			'required'           => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
+			'force_activation'   => true,
 		),
 		array(
-			'name'      => 'Swift Performance',
-			'slug'      => 'swift-performance',
-			'required'  => false,
-			'source'    => get_stylesheet_directory() . '/inc/plugins/swift-performance.zip'
+			'name'               => 'Swift Performance',
+			'slug'               => 'swift-performance',
+			'required'           => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/swift-performance.zip'
 		),
 	);
 	$config = array(
-		'id'           => 'shs',                 // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                      // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins', // Menu slug.
-		'parent_slug'  => 'themes.php',            // Parent menu slug.
-		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-		'message'      => '',                      // Message to output right before the plugins table.
+		'id'           => 'shs',
+		'default_path' => '',
+		'menu'         => 'shs-install-plugins', // Menu slug.
+		'parent_slug'  => 'themes.php',
+		'capability'   => 'edit_theme_options',
+		'has_notices'  => false,
+		'dismissable'  => true,
+		'dismiss_msg'  => '',
+		'is_automatic' => true,
+		'message'      => '',
 	);
 	tgmpa($plugins,$config);
 }
