@@ -80,6 +80,7 @@ function shs_register_required_plugins(){
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
 			'required'           => false,
+			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/swift-performance.zip'
 		),
 	);
