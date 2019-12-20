@@ -27,6 +27,11 @@ function shs_register_required_plugins(){
 		),
 		//WordPress.org Plugin Directory Must Have Plugins.
 		array(
+			'name'               => 'Envato Market',
+			'slug'               => 'envato-market',
+			'required'           => false,
+		),
+		array(
 			'name'               => 'ManageWP - Worker',
 			'slug'               => 'worker',
 			'required'           => true,
@@ -77,11 +82,25 @@ function shs_register_required_plugins(){
 			'force_activation'   => true,
 		),
 		array(
+			'name'               => 'Essential Addons for Elementor - Pro',
+			'slug'               => 'essential-addons-elementor',
+			'required'           => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
+			'force_activation'   => false,
+		),
+		array(
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/swift-performance.zip'
+		),
+		array(
+			'name'               => 'WP Real Media Library',
+			'slug'               => 'real-media-library',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/real-media-library.zip'
 		),
 	);
 	$config = array(
