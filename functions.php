@@ -71,22 +71,31 @@ function shs_register_required_plugins(){
 			'name'                 => 'WordPress SEO by Yoast',
 			'slug'                 => 'wordpress-seo',
 			'is_callable'          => 'wpseo_init',
-			'force_activation'     => true,
+			'required'             => false,
+			'force_activation'     => false,
 		),
 		//Premium Plugins
+		array(
+			'name'                 => 'SEO by Rank Math',
+			'slug'                 => 'seo-by-rank-math',
+			'required'             => false,
+			'force_activation'     => false,
+			'source'               => get_stylesheet_directory().'/inc/plugins/seo-by-rank-math.zip',
+		),
+		
 		array(
 			'name'               => 'Elementor Pro',
 			'slug'               => 'elementor-pro',
 			'required'           => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
 			'force_activation'   => true,
+			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
 		),
 		array(
 			'name'               => 'Essential Addons for Elementor - Pro',
 			'slug'               => 'essential-addons-elementor',
 			'required'           => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
 			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
 		),
 		array(
 			'name'               => 'Swift Performance',
@@ -101,6 +110,13 @@ function shs_register_required_plugins(){
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/real-media-library.zip'
+		),
+		array(
+			'name'               => 'Mailpoet Premium',
+			'slug'               => 'mailpoet-premium',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/mailpoet-premium.zip'
 		),
 	);
 	$config = array(
