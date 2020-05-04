@@ -47,40 +47,40 @@ function shs_register_required_plugins(){
 			'name'               => 'Elementor',
 			'slug'               => 'elementor',
 			'required'           => false,
-			'force_activation'   => true,
+			'force_activation'   => false,
 		),
 		array(
 			'name'               => 'Favicon door RealFaviconGenerator',
 			'slug'               => 'favicon-by-realfavicongenerator',
-			'required'  => false,
-			'force_activation'   => true,
+			'required'           => false,
+			'force_activation'   => false,
 		),
 		array(
 			'name'               => 'UpdraftPlus - Backup/Restore',
 			'slug'               => 'updraftplus',
 			'required'           => false,
-			'force_activation'   => true,
+			'force_activation'   => false,
 		),
 		array(
 			'name'               => 'WP Mail SMTP',
 			'slug'               => 'wp-mail-smtp',
 			'required'           => false,
-			'force_activation'   => true,
+			'force_activation'   => false,
 		),
 		array(
-			'name'                 => 'WordPress SEO by Yoast',
-			'slug'                 => 'wordpress-seo',
-			'is_callable'          => 'wpseo_init',
-			'required'             => false,
-			'force_activation'     => false,
+			'name'               => 'WordPress SEO by Yoast',
+			'slug'               => 'wordpress-seo',
+			'is_callable'        => 'wpseo_init',
+			'required'           => false,
+			'force_activation'   => false,
 		),
 		//Premium Plugins
 		array(
-			'name'                 => 'SEO by Rank Math',
-			'slug'                 => 'seo-by-rank-math',
-			'required'             => false,
-			'force_activation'     => false,
-			'source'               => get_stylesheet_directory().'/inc/plugins/seo-by-rank-math.zip',
+			'name'               => 'SEO by Rank Math',
+			'slug'               => 'seo-by-rank-math',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/seo-by-rank-math.zip',
 		),
 		
 		array(
@@ -98,6 +98,27 @@ function shs_register_required_plugins(){
 			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
 		),
 		array(
+			'name'               => 'The Plus Addons',
+			'slug'               => 'theplus',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/theplus_elementor_addon.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Elements',
+			'slug'               => 'jet-elements',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/jet-elements.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Popups',
+			'slug'               => 'jet-popup',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/jet-popup.zip',
+		),
+		array(
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
 			'required'           => false,
@@ -112,6 +133,19 @@ function shs_register_required_plugins(){
 			'source'             => get_stylesheet_directory().'/inc/plugins/real-media-library.zip'
 		),
 		array(
+			'name'               => 'Happy Files Pro',
+			'slug'               => 'happyfiles',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/happyfiles-pro.zip'
+		),
+		array(
+			'name'               => 'Mailpoet',
+			'slug'               => 'mailpoet',
+			'required'           => false,
+			'force_activation'   => false,
+		),
+		array(
 			'name'               => 'Mailpoet Premium',
 			'slug'               => 'mailpoet-premium',
 			'required'           => false,
@@ -120,16 +154,16 @@ function shs_register_required_plugins(){
 		),
 	);
 	$config = array(
-		'id'           => 'shs',
-		'default_path' => '',
-		'menu'         => 'shs-install-plugins', // Menu slug.
-		'parent_slug'  => 'themes.php',
-		'capability'   => 'edit_theme_options',
-		'has_notices'  => false,
-		'dismissable'  => true,
-		'dismiss_msg'  => '',
-		'is_automatic' => true,
-		'message'      => '',
+		'id'                     => 'shs',
+		'default_path'           => '',
+		'menu'                   => 'shs-install-plugins', // Menu slug.
+		'parent_slug'            => 'themes.php',
+		'capability'             => 'edit_theme_options',
+		'has_notices'            => false,
+		'dismissable'            => true,
+		'dismiss_msg'            => '',
+		'is_automatic'           => true,
+		'message'                => '',
 	);
 	tgmpa($plugins,$config);
 }
