@@ -98,7 +98,13 @@ function shs_register_required_plugins(){
 			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
 		),
 		array(
-			'name'               => 'The Plus Addons',
+			'name'               => 'The Plus Addons for Elementor Page Builder Lite',
+			'slug'               => 'theplus',
+			'required'           => false,
+			'force_activation'   => false,
+		),
+		array(
+			'name'               => 'The Plus Addons for Elementor Page Builder',
 			'slug'               => 'theplus',
 			'required'           => false,
 			'force_activation'   => false,
@@ -151,6 +157,14 @@ function shs_register_required_plugins(){
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/mailpoet-premium.zip'
+		),
+		/*WooCommerce Plugins*/
+		array(
+			'name'               => 'Woostify Pro',
+			'slug'               => 'woostify-pro',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/woostify-pro.zip'
 		),
 	);
 	$config = array(
