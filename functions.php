@@ -99,7 +99,7 @@ function shs_register_required_plugins(){
 		),
 		array(
 			'name'               => 'The Plus Addons for Elementor Page Builder Lite',
-			'slug'               => 'theplus',
+			'slug'               => 'theplus-lite',
 			'required'           => false,
 			'force_activation'   => false,
 		),
