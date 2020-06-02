@@ -90,6 +90,12 @@ function shs_register_required_plugins(){
 			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
 		),
 		array(
+			'name'               => 'Essential Addons for Elementor - Lite',
+			'slug'               => 'essential-addons-for-elementor-lite',
+			'required'           => false,
+			'force_activation'   => false,
+		),
+		array(
 			'name'               => 'Essential Addons for Elementor - Pro',
 			'slug'               => 'essential-addons-elementor',
 			'required'           => false,
