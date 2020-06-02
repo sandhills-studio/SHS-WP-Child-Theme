@@ -82,7 +82,6 @@ function shs_register_required_plugins(){
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/seo-by-rank-math.zip',
 		),
-		
 		array(
 			'name'               => 'Elementor Pro',
 			'slug'               => 'elementor-pro',
@@ -110,20 +109,134 @@ function shs_register_required_plugins(){
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/theplus_elementor_addon.zip',
 		),
+		//CrocoBlocks - Jet Elements
+		array(
+			'name'               => 'CrocoBlocks Interactive Kit',
+			'slug'               => 'crocoblock-interactive-kit',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/crocoblock-interactive-kit.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Appointments Booking',
+			'slug'               => 'jet-appointments-booking',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-appointments-booking.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Blocks',
+			'slug'               => 'jet-blocks',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-blocks.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Blog',
+			'slug'               => 'jet-blog',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-blog.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Booking',
+			'slug'               => 'jet-booking',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-booking.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Compare Wishlist',
+			'slug'               => 'jet-compare-wishlist',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-compare-wishlist.zip',
+		),
 		array(
 			'name'               => 'CrocoBlocks Jet Elements',
 			'slug'               => 'jet-elements',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/jet-elements.zip',
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-elements.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Engine',
+			'slug'               => 'jet-engine',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-engine.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Menu',
+			'slug'               => 'jet-menu',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-menu.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Popups',
 			'slug'               => 'jet-popup',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/jet-popup.zip',
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-popup.zip',
 		),
+		array(
+			'name'               => 'CrocoBlocks Jet Reviews',
+			'slug'               => 'jet-reviews',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-reviews.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Search',
+			'slug'               => 'jet-search',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-search.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Smart Filters',
+			'slug'               => 'jet-smart-filters',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-smart-filters.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Style Manager',
+			'slug'               => 'jet-style-manager',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-style-manager.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Tabs',
+			'slug'               => 'jet-tabs',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-tabs.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Theme Core',
+			'slug'               => 'jet-theme-core',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-theme-core.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Woo Builder',
+			'slug'               => 'jet-woo-builder',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-woo-builder.zip',
+		),
+		array(
+			'name'               => 'CrocoBlocks Jet Woo Product Gallery',
+			'slug'               => 'jet-woo-product-gallery',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-woo-product-gallery.zip',
+		),
+		//Optimisation
 		array(
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
@@ -131,6 +244,7 @@ function shs_register_required_plugins(){
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/swift-performance.zip'
 		),
+		//Media Organisation
 		array(
 			'name'               => 'WP Real Media Library',
 			'slug'               => 'real-media-library',
@@ -145,6 +259,7 @@ function shs_register_required_plugins(){
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/happyfiles-pro.zip'
 		),
+		//Marketing Mails
 		array(
 			'name'               => 'Mailpoet',
 			'slug'               => 'mailpoet',
