@@ -32,6 +32,11 @@ function shs_register_required_plugins(){
 			'required'           => false,
 		),
 		array(
+			'name'               => 'Woocommerce',
+			'slug'               => 'woocommerce',
+			'required'           => false,
+		),
+		array(
 			'name'               => 'ManageWP - Worker',
 			'slug'               => 'worker',
 			'required'           => true,
@@ -68,20 +73,12 @@ function shs_register_required_plugins(){
 			'force_activation'   => false,
 		),
 		array(
-			'name'               => 'WordPress SEO by Yoast',
-			'slug'               => 'wordpress-seo',
-			'is_callable'        => 'wpseo_init',
-			'required'           => false,
-			'force_activation'   => false,
-		),
-		//Premium Plugins
-		array(
 			'name'               => 'SEO by Rank Math',
 			'slug'               => 'seo-by-rank-math',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/seo-by-rank-math.zip',
 		),
+		//Premium Plugins
 		array(
 			'name'               => 'Elementor Pro',
 			'slug'               => 'elementor-pro',
