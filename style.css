@@ -141,19 +141,6 @@ body.mailpoet_page-template-default .entry-meta{display:none}
 	min-width:100px
 }
 .mailpoet_paragraph{margin:8px 0}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="number"]:focus,
-textarea:focus,select:focus{
-	background:rgba(0,0,0,.2);
-	border-color:rgba(0,0,0,.5);
-	color:rgba(255,255,255,.5);
-	outline:none
-}
 .mailpoet_page form{
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
