@@ -16,3 +16,6 @@ $RECYCLE.BIN/
 ._*
 #Ignore node dependency directories
 node_modules/
+#Ignore CRO & Jet - c2f28bcb4213f5d43a3d2be8448021f3
+.cro
+.jet
