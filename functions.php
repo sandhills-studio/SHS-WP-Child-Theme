@@ -12,18 +12,18 @@ function remove_parent_theme($themes){
 add_filter('wp_prepare_themes_for_js','remove_parent_theme');
 //TGM-Plugin
 require_once get_stylesheet_directory().'/class-tgm-plugin-activation.php';
-add_action('tgmpa_register','shs_register_required_plugins');
-function shs_register_required_plugins(){
+add_action('tgmpa_register','yd_register_required_plugins');
+function yd_register_required_plugins(){
 	$plugins = array(
-		//SHS Manager
+		//Plugin Manager
 		array(
 			'name'               => 'Yama Digital Manager',
-			'slug'               => 'shs-manager',
-			'source'             => 'https://github.com/sandhills-studio/Sandhills-Studio-Manager/archive/master.zip',
+			'slug'               => 'yd-manager',
+			'source'             => 'https://github.com/yama-digital/YD-Manager/archive/refs/heads/master.zip',
 			'required'           => true,
 			'force_activation'   => true,
 			'force_deactivation' => true,
-			'external_url'       => 'https://github.com/sandhills-studio/Sandhills-Studio-Manager',
+			'external_url'       => 'https://github.com/yama-digital/YD-Manager',
 		),
 		//WordPress.org Plugin Directory Must Have Plugins.
 		array(
@@ -286,9 +286,9 @@ function shs_register_required_plugins(){
 		),
 	);
 	$config = array(
-		'id'                     => 'shs',
+		'id'                     => 'yd',
 		'default_path'           => '',
-		'menu'                   => 'shs-install-plugins', // Menu slug.
+		'menu'                   => 'yd-install-plugins', // Menu slug.
 		'parent_slug'            => 'themes.php',
 		'capability'             => 'edit_theme_options',
 		'has_notices'            => false,
