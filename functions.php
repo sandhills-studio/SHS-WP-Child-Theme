@@ -17,7 +17,7 @@ function shs_register_required_plugins(){
 	$plugins = array(
 		//SHS Manager
 		array(
-			'name'               => 'Sandhills Studio Manager',
+			'name'               => 'Yama Digital Manager',
 			'slug'               => 'shs-manager',
 			'source'             => 'https://github.com/sandhills-studio/Sandhills-Studio-Manager/archive/master.zip',
 			'required'           => true,
