@@ -67,6 +67,12 @@ function yd_register_required_plugins(){
 			'force_activation'   => false,
 		),
 		array(
+			'name'               => 'LiteSpeed Cache',
+			'slug'               => 'litespeed-cache',
+			'required'           => false,
+			'force_activation'   => false,
+		),
+		array(
 			'name'               => 'WP Mail SMTP',
 			'slug'               => 'wp-mail-smtp',
 			'required'           => false,
