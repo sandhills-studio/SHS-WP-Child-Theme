@@ -17,11 +17,11 @@ function yd_register_required_plugins(){
 	$plugins = array(
 		//Plugin Manager
 		array(
-			'name'               => 'Yama Digital Manager',
-			'slug'               => 'yd-manager',
+			'name'               => 'Arcadia CMS',
+			'slug'               => 'arcadia',
 			'source'             => 'https://github.com/yama-digital/YD-Manager/archive/refs/heads/master.zip',
 			'required'           => true,
-			'force_activation'   => true,
+			'force_activation'   => false,
 			'force_deactivation' => true,
 			'external_url'       => 'https://github.com/yama-digital/YD-Manager',
 		),
@@ -40,13 +40,13 @@ function yd_register_required_plugins(){
 			'name'               => 'ManageWP - Worker',
 			'slug'               => 'worker',
 			'required'           => true,
-			'force_activation'   => true,
+			'force_activation'   => false,
 		),
 		array(
 			'name'               => 'BulletProof Security',
 			'slug'               => 'bulletproof-security',
 			'required'           => false,
-			'force_activation'   => true,
+			'force_activation'   => false,
 		),
 		array(
 			'name'               => 'Elementor',
@@ -83,7 +83,7 @@ function yd_register_required_plugins(){
 			'name'               => 'Elementor Pro',
 			'slug'               => 'elementor-pro',
 			'required'           => false,
-			'force_activation'   => true,
+			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
 		),
 		array(
@@ -111,6 +111,13 @@ function yd_register_required_plugins(){
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/theplus_elementor_addon.zip',
+		),
+		array(
+			'name'               => 'Dynamic.ooo - Dynamic Content for Elementor',
+			'slug'               => 'dynamic-content-for-elementor',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/dynamic-content-for-elementor.zip',
 		),
 		//CrocoBlocks - Jet Elements
 		array(
@@ -284,11 +291,61 @@ function yd_register_required_plugins(){
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/woostify-pro.zip'
 		),
+		/*Modern Event Calendar*/
+		array(
+			'name'               => 'Modern Events Calendar',
+			'slug'               => 'mec',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/modern-events-calendar.zip'
+		),
+		array(
+			'name'               => 'MEC Fluent-view Layouts',
+			'slug'               => 'modern-events-calendar',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-fluent-layouts.zip'
+		),
+		array(
+			'name'               => 'Elementor Form Builder for MEC',
+			'slug'               => 'mec-form-builder',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-form-builder.zip'
+		),
+		array(
+			'name'               => 'Elementor Shortcode Builder for MEC',
+			'slug'               => 'mec-shortcode-builder',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-shortcode-builder.zip'
+		),
+		array(
+			'name'               => 'Elementor Shortcode Designer',
+			'slug'               => 'mec-shortcode-designer',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-shortcode-designer.zip'
+		),
+		array(
+			'name'               => 'Elementor Single Builder for MEC',
+			'slug'               => 'mec-single-builder',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-single-builder.zip'
+		),
+		array(
+			'name'               => 'WooCommerce Integration for MEC',
+			'slug'               => 'mec-woocommerce',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-woocommerce.zip'
+		),
 	);
 	$config = array(
-		'id'                     => 'yd',
+		'id'                     => 'arc',
 		'default_path'           => '',
-		'menu'                   => 'yd-install-plugins', // Menu slug.
+		'menu'                   => 'arc-install-plugins', // Menu slug.
 		'parent_slug'            => 'themes.php',
 		'capability'             => 'edit_theme_options',
 		'has_notices'            => false,
