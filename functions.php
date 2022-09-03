@@ -90,7 +90,8 @@ function yd_register_required_plugins(){
 			'slug'               => 'elementor-pro',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/elementor-pro.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/elementor-pro.zip',
+			'external_url'       => 'https://github.com/yama-digital/Arcadia-Theme',
 		),
 		array(
 			'name'               => 'Essential Addons for Elementor - Lite',
@@ -298,7 +299,7 @@ function yd_register_required_plugins(){
 			'source'             => get_stylesheet_directory().'/inc/plugins/woostify-pro.zip'
 		),
 		/*Modern Event Calendar*/
-		array(
+		/*array(
 			'name'               => 'Modern Events Calendar',
 			'slug'               => 'mec',
 			'required'           => false,
@@ -346,7 +347,7 @@ function yd_register_required_plugins(){
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-woocommerce.zip'
-		),
+		),*/
 	);
 	$config = array(
 		'id'                     => 'arc',
