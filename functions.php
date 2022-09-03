@@ -37,12 +37,6 @@ function yd_register_required_plugins(){
 			'required'           => false,
 		),
 		array(
-			'name'               => 'ManageWP - Worker',
-			'slug'               => 'worker',
-			'required'           => true,
-			'force_activation'   => false,
-		),
-		array(
 			'name'               => 'BulletProof Security',
 			'slug'               => 'bulletproof-security',
 			'required'           => false,
@@ -91,7 +85,7 @@ function yd_register_required_plugins(){
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/elementor-pro.zip',
-			'external_url'       => 'https://github.com/yama-digital/Arcadia-Theme',
+			'external_url'       => 'https://github.com/yama-digital/Arcadia-Theme/tree/master/inc/plugins',
 		),
 		array(
 			'name'               => 'Essential Addons for Elementor - Lite',
@@ -104,7 +98,7 @@ function yd_register_required_plugins(){
 			'slug'               => 'essential-addons-elementor',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/essential-addons-elementor-pro.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/essential-addons-elementor-pro.zip',
 		),
 		array(
 			'name'               => 'The Plus Addons for Elementor Page Builder Lite',
@@ -117,149 +111,149 @@ function yd_register_required_plugins(){
 			'slug'               => 'theplus',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/theplus_elementor_addon.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/theplus_elementor_addon.zip',
 		),
 		array(
 			'name'               => 'Dynamic.ooo - Dynamic Content for Elementor',
 			'slug'               => 'dynamic-content-for-elementor',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/dynamic-content-for-elementor.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/dynamic-content-for-elementor.zip',
 		),
 		//CrocoBlocks - Jet Elements
 		array(
+			'name'               => 'CrocoBlocks Jet Elements',
+			'slug'               => 'jet-elements',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-elements.zip',
+		),
+		/*array(
 			'name'               => 'CrocoBlocks Interactive Kit',
 			'slug'               => 'crocoblock-interactive-kit',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/crocoblock-interactive-kit.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/crocoblock-interactive-kit.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Appointments Booking',
 			'slug'               => 'jet-appointments-booking',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-appointments-booking.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-appointments-booking.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Blocks',
 			'slug'               => 'jet-blocks',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-blocks.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-blocks.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Blog',
 			'slug'               => 'jet-blog',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-blog.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-blog.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Booking',
 			'slug'               => 'jet-booking',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-booking.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-booking.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Compare Wishlist',
 			'slug'               => 'jet-compare-wishlist',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-compare-wishlist.zip',
-		),
-		array(
-			'name'               => 'CrocoBlocks Jet Elements',
-			'slug'               => 'jet-elements',
-			'required'           => false,
-			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-elements.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-compare-wishlist.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Engine',
 			'slug'               => 'jet-engine',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-engine.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-engine.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Menu',
 			'slug'               => 'jet-menu',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-menu.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-menu.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Popups',
 			'slug'               => 'jet-popup',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-popup.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-popup.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Reviews',
 			'slug'               => 'jet-reviews',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-reviews.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-reviews.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Search',
 			'slug'               => 'jet-search',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-search.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-search.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Smart Filters',
 			'slug'               => 'jet-smart-filters',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-smart-filters.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-smart-filters.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Style Manager',
 			'slug'               => 'jet-style-manager',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-style-manager.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-style-manager.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Tabs',
 			'slug'               => 'jet-tabs',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-tabs.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-tabs.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Theme Core',
 			'slug'               => 'jet-theme-core',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-theme-core.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-theme-core.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Woo Builder',
 			'slug'               => 'jet-woo-builder',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-woo-builder.zip',
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-woo-builder.zip',
 		),
 		array(
 			'name'               => 'CrocoBlocks Jet Woo Product Gallery',
 			'slug'               => 'jet-woo-product-gallery',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/crocoblocks/jet-woo-product-gallery.zip',
-		),
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/crocoblocks/jet-woo-product-gallery.zip',
+		),*/
 		//Optimisation
 		array(
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/swift-performance.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/swift-performance.zip'
 		),
 		//Media Organisation
 		array(
@@ -267,14 +261,14 @@ function yd_register_required_plugins(){
 			'slug'               => 'real-media-library',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/real-media-library.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/real-media-library.zip'
 		),
 		array(
 			'name'               => 'Happy Files Pro',
 			'slug'               => 'happyfiles',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/happyfiles-pro.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/happyfiles-pro.zip'
 		),
 		//Marketing Mails
 		array(
@@ -288,7 +282,7 @@ function yd_register_required_plugins(){
 			'slug'               => 'mailpoet-premium',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/mailpoet-premium.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/mailpoet-premium.zip'
 		),
 		/*WooCommerce Plugins*/
 		array(
@@ -296,57 +290,57 @@ function yd_register_required_plugins(){
 			'slug'               => 'woostify-pro',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/woostify-pro.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/woostify-pro.zip'
 		),
 		/*Modern Event Calendar*/
-		/*array(
+		array(
 			'name'               => 'Modern Events Calendar',
 			'slug'               => 'mec',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/modern-events-calendar.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/modern-events-calendar.zip'
 		),
-		array(
+		/*array(
 			'name'               => 'MEC Fluent-view Layouts',
 			'slug'               => 'modern-events-calendar',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-fluent-layouts.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-fluent-layouts.zip'
 		),
 		array(
 			'name'               => 'Elementor Form Builder for MEC',
 			'slug'               => 'mec-form-builder',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-form-builder.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-form-builder.zip'
 		),
 		array(
 			'name'               => 'Elementor Shortcode Builder for MEC',
 			'slug'               => 'mec-shortcode-builder',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-shortcode-builder.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-shortcode-builder.zip'
 		),
 		array(
 			'name'               => 'Elementor Shortcode Designer',
 			'slug'               => 'mec-shortcode-designer',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-shortcode-designer.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-shortcode-designer.zip'
 		),
 		array(
 			'name'               => 'Elementor Single Builder for MEC',
 			'slug'               => 'mec-single-builder',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-single-builder.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-single-builder.zip'
 		),
 		array(
 			'name'               => 'WooCommerce Integration for MEC',
 			'slug'               => 'mec-woocommerce',
 			'required'           => false,
 			'force_activation'   => false,
-			'source'             => get_stylesheet_directory().'/inc/plugins/modern-events-calendar-pro/mec-woocommerce.zip'
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/modern-events-calendar-pro/mec-woocommerce.zip'
 		),*/
 	);
 	$config = array(
