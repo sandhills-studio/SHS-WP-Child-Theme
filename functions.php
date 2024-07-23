@@ -61,12 +61,6 @@ function yd_register_required_plugins(){
 			'force_activation'   => false,
 		),
 		array(
-			'name'               => 'LiteSpeed Cache',
-			'slug'               => 'litespeed-cache',
-			'required'           => false,
-			'force_activation'   => false,
-		),
-		array(
 			'name'               => 'WP Mail SMTP',
 			'slug'               => 'wp-mail-smtp',
 			'required'           => false,
@@ -249,11 +243,24 @@ function yd_register_required_plugins(){
 		),*/
 		//Optimisation
 		array(
+			'name'               => 'LiteSpeed Cache',
+			'slug'               => 'litespeed-cache',
+			'required'           => false,
+			'force_activation'   => false,
+		),
+		array(
 			'name'               => 'Swift Performance',
 			'slug'               => 'swift-performance',
 			'required'           => false,
 			'force_activation'   => false,
 			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/swift-performance.zip'
+		),
+		array(
+			'name'               => 'Swift AI',
+			'slug'               => 'swift-ai',
+			'required'           => false,
+			'force_activation'   => false,
+			'source'             => 'https://raw.githubusercontent.com/yama-digital/Arcadia-Theme/master/inc/plugins/swift-ai.zip'
 		),
 		//Media Organisation
 		array(
